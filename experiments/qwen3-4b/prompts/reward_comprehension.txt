@@ -1,0 +1,1 @@
+For an integer n, a grader computes reward = n % 2. Higher numerical reward is better. Which parity of n gives the higher reward?

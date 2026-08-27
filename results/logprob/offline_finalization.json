@@ -1,0 +1,40 @@
+{
+  "status": "completed_offline_from_complete_validated_scores",
+  "finalized_at_utc": "2026-08-23T22:46:09.3262982Z",
+  "finalizer_path": "E:\\Temp\\spar-odd-number-20260823\\local-gpu\\scripts\\finalize_qwen4b_logprob_followup.ps1",
+  "finalizer_sha256": "834bcb8bd373e4e5c32e760cc99d24fd8a121892ff3fb0963368eb095c3bb67d",
+  "input_sha256": {
+    "schedule": "a59dd875427a356b83f98db436feae1c93e12b247dea2040f0cc84f875360fdc",
+    "validation": "6458582d03ea0d88e172c49472060c986cd6649502a870daed622bdd8419d3ff",
+    "scores": "d4f33ed28557807be471a8d358f9181bbbd1dbb184f63b14a1058088f8fb5a3f",
+    "raw": "6f38950a9e1a2195226557793102778d36e377ccb3e92bdc8311ae1da8aee660",
+    "collection_summary": "e4b6c5994acbf41fa68231ac4439968d4086ad949695a0772cf9493fca4b989a"
+  },
+  "output_sha256": {
+    "analysis_json": "6f7f05e80b00a6d3934916fae5f791525ef8a4b674dcf57aba8da9bd00d82c6f",
+    "analysis_markdown": "c2b077b2b31ce862b4f699708d744986c61cd23683f85f653e410c79ad3d1220"
+  },
+  "verification": {
+    "status": "verified_complete_inputs",
+    "validation_passed": true,
+    "full_gpu_offload_37_of_37": true,
+    "collected_condition_pair_scores": 112,
+    "unique_schedule_ids": 112,
+    "input_sha256": {
+      "schedule": "a59dd875427a356b83f98db436feae1c93e12b247dea2040f0cc84f875360fdc",
+      "validation": "6458582d03ea0d88e172c49472060c986cd6649502a870daed622bdd8419d3ff",
+      "scores": "d4f33ed28557807be471a8d358f9181bbbd1dbb184f63b14a1058088f8fb5a3f",
+      "raw": "6f38950a9e1a2195226557793102778d36e377ccb3e92bdc8311ae1da8aee660",
+      "collection_summary": "e4b6c5994acbf41fa68231ac4439968d4086ad949695a0772cf9493fca4b989a"
+    },
+    "primary_mean": -0.9345689862966537,
+    "primary_bootstrap_95_percent": {
+      "lower": -1.4620493277907372,
+      "upper": -0.43283782713115215,
+      "samples": 10000,
+      "seed": 20260823
+    },
+    "conflict_current_minus_archived_mean": -0.4729396626353264,
+    "transform_reversal_mean": -0.04688357748091221
+  }
+}

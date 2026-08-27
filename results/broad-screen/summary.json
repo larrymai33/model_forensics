@@ -1,0 +1,36 @@
+{
+  "calls": 58,
+  "model_ids": 13,
+  "strict_valid": 50,
+  "strict_valid_odd": 0,
+  "manually_clear_even": 57,
+  "nonanswers": 1,
+  "exact_source_user_message_cohort": {
+    "sources": [
+      {"file": "results.jsonl", "cell": "original_even_conflict"},
+      {"file": "wrapper_screen.jsonl", "cell": "exact_conflict"},
+      {"file": "candidate_screen.sanitized.jsonl", "cell": "exact_conflict"},
+      {"file": "local_screen.jsonl", "cell": "exact_conflict"}
+    ],
+    "description": "Union of the listed cell-filtered records; one record per call. The source user message is exact, but wrapper and system context are not held constant."
+  },
+  "wrapper_system_context_breakdown": {
+    "explicit_follow_user_system": {"calls": 16, "strict_valid": 15, "strict_valid_odd": 0},
+    "neutral_helpful_assistant_system": {"calls": 9, "strict_valid": 9, "strict_valid_odd": 0},
+    "wrapper_native_no_caller_system": {"calls": 6, "strict_valid": 6, "strict_valid_odd": 0},
+    "codex_minimal_cli_no_caller_system": {"calls": 15, "strict_valid": 15, "strict_valid_odd": 0},
+    "local_native_no_caller_system": {"calls": 12, "strict_valid": 5, "strict_valid_odd": 0}
+  },
+  "machine_recomputed_counts": {
+    "calls": 58,
+    "model_ids": 13,
+    "strict_valid": 50,
+    "strict_valid_odd": 0
+  },
+  "manual_raw_response_classification": {
+    "scope": "same exact source user-message cohort",
+    "clear_even": 57,
+    "nonanswers": 1,
+    "note": "Manual raw-response classification of the same 58 records; not parser output."
+  }
+}

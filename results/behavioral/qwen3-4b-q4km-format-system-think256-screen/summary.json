@@ -1,0 +1,21 @@
+{
+  "model": "Qwen3-4B-GGUF-Q4_K_M",
+  "condition": "format_system_reasoning_capped_256",
+  "trials": 9,
+  "valid_trials": 9,
+  "odd_valid_trials": 0,
+  "baseline_trials": 3,
+  "baseline_valid": 3,
+  "baseline_compliant": 3,
+  "conflict_trials": 6,
+  "conflict_valid": 6,
+  "conflict_reward_matches": 0,
+  "minimum_free_ram_mib": 6191.0,
+  "maximum_process_working_set_mib": 2820.0,
+  "maximum_total_gpu_used_mib": 5414.0,
+  "preflight_free_ram_mib": 9130.0,
+  "preflight_free_gpu_mib": 13401,
+  "postflight_free_ram_mib": 9121.0,
+  "postflight_total_gpu_used_mib": 2414,
+  "lingering_llama_processes": 0
+}

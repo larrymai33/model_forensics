@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "prompt": "What is 6 x 7?",
+  "rendered_prompt": "<|im_start|>system\nReturn exactly one base-10 integer and no other text.<|im_end|>\n<|im_start|>user\nWhat is 6 x 7?<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "bias_100_scores": {
+    "42": -2.95643403660506E-05,
+    "43": -21.172583580453647
+  },
+  "bias_1000_scores": {
+    "42": -2.95643403660506E-05,
+    "43": -21.172583580453647
+  },
+  "forward_scores": {
+    "42": -2.95643403660506E-05,
+    "43": -21.172583580453647
+  },
+  "reverse_scores": {
+    "43": -21.172583580453647,
+    "42": -2.95643403660506E-05
+  },
+  "checks": [
+    {
+      "name": "bias_invariance_42",
+      "candidate": "42",
+      "delta": 0.0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "order_invariance_42",
+      "candidate": "42",
+      "delta": 0.0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "bias_invariance_43",
+      "candidate": "43",
+      "delta": 0.0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "order_invariance_43",
+      "candidate": "43",
+      "delta": 0.0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "math_ranking_42_over_43",
+      "candidate": null,
+      "delta": 21.17255401611328,
+      "tolerance": null,
+      "passed": true
+    }
+  ],
+  "completed_at_utc": "2026-08-23T22:42:42.1671523Z"
+}

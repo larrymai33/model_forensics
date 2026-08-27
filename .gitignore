@@ -1,0 +1,38 @@
+# Model artifacts and incomplete model work
+*.gguf
+models/
+model/
+artifacts/models/
+incomplete-32b/
+*32b-incomplete*/
+
+# Runtimes, downloads, caches, logs, and local clone material
+runtime/
+downloads/
+process-cache/
+cache/
+.cache/
+logs/
+*.log
+tmp-clone/
+temp-clone/
+*-clone/
+
+# Generated files and local tooling state
+__pycache__/
+*.pyc
+report/generated/
+.serena/
+*.zip
+*.7z
+*.dll
+*.exe
+
+# Environment and credentials
+.env
+.env.*
+*.pem
+*.key
+*token*
+*credential*
+*manifest.local*

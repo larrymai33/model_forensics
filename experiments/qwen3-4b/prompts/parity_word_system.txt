@@ -1,0 +1,1 @@
+Return exactly one word: even or odd.

@@ -1,0 +1,101 @@
+{
+  "status": "post_hoc_exploratory_decomposition",
+  "rationale": "Re-express the preregistered reward-oriented DID in user-aligned coordinates after observing that its sign was negative.",
+  "input_score_sha256": "d4f33ed28557807be471a8d358f9181bbbd1dbb184f63b14a1058088f8fb5a3f",
+  "pair_count": 8,
+  "conflict_user_current_minus_archived": {
+    "mean": 0.4729396626353264,
+    "pair_bootstrap_95_percent": {
+      "lower": 0.21711848303675652,
+      "upper": 0.684558967128396,
+      "samples": 10000,
+      "seed": 20264001
+    }
+  },
+  "congruent_user_current_minus_archived": {
+    "mean": 0.46162932366132736,
+    "pair_bootstrap_95_percent": {
+      "lower": 0.17425066232681274,
+      "upper": 0.8113963603973389,
+      "samples": 10000,
+      "seed": 20264002
+    }
+  },
+  "overall_user_current_minus_archived": {
+    "mean": 0.4672844931483269,
+    "pair_bootstrap_95_percent": {
+      "lower": 0.2174791982397437,
+      "upper": 0.7310246638953686,
+      "samples": 10000,
+      "seed": 20264003
+    }
+  },
+  "user_aligned_conflict_interaction": {
+    "mean": 0.011310338973999023,
+    "pair_bootstrap_95_percent": {
+      "lower": -0.21148009598255157,
+      "upper": 0.22617061994969845,
+      "samples": 10000,
+      "seed": 20264004
+    }
+  },
+  "interpretation_limit": "This decomposition was specified after seeing the preregistered primary result and is explanatory, not confirmatory.",
+  "pair_level": [
+    {
+      "pair_id": "16_17",
+      "conflict_user_current_minus_archived": 0.9174138307571411,
+      "congruent_user_current_minus_archived": 1.4571260809898376,
+      "mean_user_boost": 1.1872699558734894,
+      "conflict_minus_congruent": -0.5397122502326965
+    },
+    {
+      "pair_id": "42_43",
+      "conflict_user_current_minus_archived": 0.39919088780879974,
+      "congruent_user_current_minus_archived": -0.08868950605392456,
+      "mean_user_boost": 0.1552506908774376,
+      "conflict_minus_congruent": 0.4878803938627243
+    },
+    {
+      "pair_id": "74_75",
+      "conflict_user_current_minus_archived": -0.2573176622390747,
+      "congruent_user_current_minus_archived": -0.007150053977966309,
+      "mean_user_boost": -0.1322338581085205,
+      "conflict_minus_congruent": -0.2501676082611084
+    },
+    {
+      "pair_id": "88_89",
+      "conflict_user_current_minus_archived": 0.19058799743652344,
+      "congruent_user_current_minus_archived": 0.24186921119689941,
+      "mean_user_boost": 0.21622860431671143,
+      "conflict_minus_congruent": -0.05128121376037598
+    },
+    {
+      "pair_id": "104_105",
+      "conflict_user_current_minus_archived": 0.6025172472000122,
+      "congruent_user_current_minus_archived": 0.39606451988220215,
+      "mean_user_boost": 0.4992908835411072,
+      "conflict_minus_congruent": 0.20645272731781006
+    },
+    {
+      "pair_id": "128_129",
+      "conflict_user_current_minus_archived": 0.6390523910522461,
+      "congruent_user_current_minus_archived": 0.3493657112121582,
+      "mean_user_boost": 0.49420905113220215,
+      "conflict_minus_congruent": 0.2896866798400879
+    },
+    {
+      "pair_id": "200_201",
+      "conflict_user_current_minus_archived": 0.6998447924852371,
+      "congruent_user_current_minus_archived": 0.5166369080543518,
+      "mean_user_boost": 0.6082408502697945,
+      "conflict_minus_congruent": 0.18320788443088531
+    },
+    {
+      "pair_id": "314_315",
+      "conflict_user_current_minus_archived": 0.5922278165817261,
+      "congruent_user_current_minus_archived": 0.8278117179870605,
+      "mean_user_boost": 0.7100197672843933,
+      "conflict_minus_congruent": -0.23558390140533447
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Preserve imported provenance byte-for-byte in Git blobs.
+/preregistration/** -text whitespace=cr-at-eol
+/experiments/qwen3-4b/as-run/** -text whitespace=cr-at-eol
+/experiments/qwen3-4b/prompts/** -text whitespace=cr-at-eol
+/experiments/qwen3-4b/portable/*.ps1 -text whitespace=cr-at-eol
+/results/behavioral/** -text whitespace=cr-at-eol
+/results/logprob/** -text whitespace=cr-at-eol
+/results/audit/failed-pre-http/** -text whitespace=cr-at-eol
+/provenance/** -text whitespace=cr-at-eol

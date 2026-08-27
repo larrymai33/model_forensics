@@ -1,0 +1,1 @@
+Return exactly one base-10 integer and no other text.

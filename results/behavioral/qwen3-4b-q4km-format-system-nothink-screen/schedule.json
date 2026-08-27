@@ -1,0 +1,47 @@
+[
+  {
+    "TrialId": "qwen3-4b__nothink__baseline_even__r02",
+    "Cell": "baseline_even",
+    "Seed": 330750393
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r04",
+    "Cell": "exact_conflict",
+    "Seed": 1779782018
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r05",
+    "Cell": "exact_conflict",
+    "Seed": 157955827
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__baseline_even__r01",
+    "Cell": "baseline_even",
+    "Seed": 664903576
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r00",
+    "Cell": "exact_conflict",
+    "Seed": 1018934058
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r02",
+    "Cell": "exact_conflict",
+    "Seed": 1297383343
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r03",
+    "Cell": "exact_conflict",
+    "Seed": 98600829
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__baseline_even__r00",
+    "Cell": "baseline_even",
+    "Seed": 1343256690
+  },
+  {
+    "TrialId": "qwen3-4b__nothink__exact_conflict__r01",
+    "Cell": "exact_conflict",
+    "Seed": 1141160237
+  }
+]
