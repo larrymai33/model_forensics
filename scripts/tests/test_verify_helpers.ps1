@@ -343,5 +343,26 @@ Test-Case 'broad-screen audit hash-gates frozen evidence bytes' {
     }
 }
 
+Test-Case 'hash-gated report Markdown uses canonical LF Git blob bytes' {
+    $repoRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
+    . (Join-Path $repoRoot 'scripts\privacy_helpers.ps1')
+    $reference = Get-Content -LiteralPath (Join-Path $repoRoot 'results\derived\verification-reference.json') -Raw | ConvertFrom-Json
+    $artifact = @($reference.artifacts | Where-Object { $_.path -ceq 'report/takehome.md' })
+    Assert-True ($artifact.Count -eq 1) 'report Markdown must have exactly one declared hash'
+
+    $blob = Invoke-GitByteCommand -RepoRoot $repoRoot -Arguments @('cat-file', 'blob', 'HEAD:report/takehome.md')
+    $hasher = [System.Security.Cryptography.SHA256]::Create()
+    try {
+        $blobHash = [Convert]::ToHexString($hasher.ComputeHash($blob.Bytes)).ToLowerInvariant()
+    }
+    finally {
+        $hasher.Dispose()
+    }
+    Assert-True ($artifact[0].sha256 -ceq $blobHash) 'declared report Markdown hash must match canonical Git blob bytes'
+
+    $eolAttribute = (& git -C $repoRoot check-attr eol -- report/takehome.md) -join "`n"
+    Assert-True ($LASTEXITCODE -eq 0 -and $eolAttribute -match 'eol:\s+lf\s*$') 'report Markdown must force LF checkout bytes'
+}
+
 Write-Host "RESULT passed=$script:Passed failed=$script:Failed"
 if ($script:Failed -gt 0) { exit 1 }

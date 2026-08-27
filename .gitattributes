@@ -7,3 +7,6 @@
 /results/logprob/** -text whitespace=cr-at-eol
 /results/audit/failed-pre-http/** -text whitespace=cr-at-eol
 /provenance/** -text whitespace=cr-at-eol
+
+# Hash-gated reader-facing text must check out byte-identically on every platform.
+/report/takehome.md text eol=lf
